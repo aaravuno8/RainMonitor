@@ -1,0 +1,36 @@
+#body {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.weatherimg {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.weatherimg.transparent {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1010px) {
+    .weatherimg{
+        height: 100vh!important;
+        width: auto!important;
+    }
+
+    .weatherimg #sun{
+        bottom: 0;
+    }
+}
